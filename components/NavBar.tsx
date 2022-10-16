@@ -18,7 +18,7 @@ export const NavBar = () => {
             component="div"
             sx={{ display: { xs: 'block', sm: 'block' } }}
           >
-            Cars Booking By Gheenem
+            Cars Booking
           </Typography>
           <Box sx={{ flexGrow: 1 }} />
         </Toolbar>
