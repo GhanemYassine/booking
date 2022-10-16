@@ -14,11 +14,8 @@ export const CarsList = () => {
     const [currTab,_] = useAtom(whichCarTabAtom)
     const [page, _setActivePage] = useAtom(activePageAtom);
     const [_numberOfPages,setNumberOfPages] = useAtom(pagesAtom);
-    const [fromDateValue,setFromDateValue] = useAtom(fromDateFilterAtom)
-    const [toDateValue,setToDateValue] = useAtom(toDateFilterAtom)
-
-    console.log(fromDateValue?.format("YYYY/MM/DD"));
-    console.log(toDateValue?.format("YYYY/MM/DD"));
+    const [fromDateValue,_setFromDateValue] = useAtom(fromDateFilterAtom)
+    const [toDateValue,_setToDateValue] = useAtom(toDateFilterAtom)
 
     
     React.useEffect(() => {        

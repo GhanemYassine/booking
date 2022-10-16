@@ -19,25 +19,35 @@ const Item = styled(Paper)(({ theme }) => ({
 const Home: NextPage = () => {
   return (
     <>
-    <NavBar />
-    <Container>
-      <CarTabs/>
-      <br/>
-      <br/>
-      <CarsList />
-      <br/>
+    <header>
+      <NavBar />
+    </header>
+    
+    <main>
+        <Container>
+          <CarTabs/>
+          <br/>
+          <br/>
+          <CarsList />
+          <br/>
+          
+          
+          <BookCarModal/>
+        </Container>
+    </main>
+    <footer>
+              <Grid container spacing={3}>
+                <Grid item xs />
+                <Grid item xs={6}>
+                  <Item>
+                    <PaginationFooter />
+                  </Item>
+                </Grid>
+                <Grid item xs />
+              </Grid>
+    </footer>
 
-      <Grid container spacing={3}>
-        <Grid item xs />
-        <Grid item xs={6}>
-          <Item>
-            <PaginationFooter />
-          </Item>
-        </Grid>
-        <Grid item xs />
-      </Grid>
-      <BookCarModal/>
-    </Container>
+    
       
     </>
   )
